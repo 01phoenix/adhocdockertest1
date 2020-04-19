@@ -1,0 +1,4 @@
+Ans 1: created a yaml file to deploy a pod with two containers. Container1 is alpine which runs a ping command and container and the other container sleeps for 1000000 seconds
+
+deploy.yml: This file will create a deployment with 3 replica sets running nginx server. Therer is a service running in the backgroud for the same. 
+
