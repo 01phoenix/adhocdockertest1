@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: apurvdep
+  name: apurvdep
+  namespace: apurv
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apurvdep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apurvdep
+    spec:
+      containers:
+      - image: apurvjain0101/ckad-test
+        name: apurvjain0101/ckad-test
+        ports:
+        - containerPort: 80
+
